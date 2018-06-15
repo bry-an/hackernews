@@ -21,12 +21,18 @@ const list = [
 ];
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      list: list,
+    };
+  }
   render() {
-    
     return (
       <div className="App">
-      {list.map(function(item) {
-        return (
+      {this.state.list.map(item => 
           <div key={item.objectID}>
             <span>
               <a href={item.url}>{item.title}</a>
@@ -36,7 +42,7 @@ class App extends Component {
               <span>{item.points}</span>
               </div>
               );
-      })}
+      )}
       </div>
     );
   }
