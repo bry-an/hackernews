@@ -41,8 +41,7 @@ class App extends Component {
               <span>{item.num_comments}</span>
               <span>{item.points}</span>
               </div>
-              );
-      )}
+              )};
       </div>
     );
   }
