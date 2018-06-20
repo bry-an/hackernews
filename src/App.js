@@ -44,9 +44,9 @@ class App extends Component {
     this.setState({ list: updatedList });
   }
 
-  onSearchChange (event) {}
+  onSearchChange (event) {
   this.setState({ searchTerm: event.target.value})
-
+}
 
   render() {
     return (
