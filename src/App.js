@@ -24,7 +24,7 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-
+    console.log(this);
     this.state = {
       list: list,
     };
